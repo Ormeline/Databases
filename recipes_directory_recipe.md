@@ -62,7 +62,6 @@ rating : numeric
 ```sql
 -- EXAMPLE
 -- file: albums_table.sql
-
 -- Replace the table name, columm names and types.
 
 CREATE TABLE recipes (
@@ -76,7 +75,7 @@ CREATE TABLE recipes (
 ## 5. Create the table.
 
 ```bash
-psql -h 127.0.0.1 database_name < albums_table.sql
+psql -h 127.0.0.1 database_name_test < albums_table.sql
 ```
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

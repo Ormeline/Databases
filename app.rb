@@ -6,7 +6,8 @@ DatabaseConnection.connect("recipes_directory")
 result = DatabaseConnection.exec_params("SELECT * FROM recipes;", [])
 recipes_directory = RecipesDirectory.new
 
-# Print all recipes
+
+# print all recipes 
 recipes = recipes_directory.all
 recipes.each do |recipe|
   puts "#{recipe.id} - #{recipe.name} - #{recipe.average_cooking_time} - #{recipe.rating}"
